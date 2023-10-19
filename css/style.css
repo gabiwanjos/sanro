@@ -37,6 +37,17 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 20px 4%;
+
+}
+
+header.rolagem a{
+    color: black;
 }
 
 header ul{
@@ -49,6 +60,8 @@ header ul li{
 }
 
 header ul li a{
+    font-family: 'Crimson Text';
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
@@ -66,7 +79,11 @@ header ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 40px;
     margin: auto;
+    background-color:rgb(196, 154, 117);
+    height: 350px;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.226);
 }
 
 .food{
@@ -75,22 +92,64 @@ header ul li a{
 }
 
 .about{
-    margin-top: 60px;
     display: flex;
     gap: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    background-color:rgba(192, 141, 97, 0.418);
-    padding: 40px ;
+    width: 300px;
     border-radius: 2px;
+}
+
+.title{
+    font-family: 'Crimson Text';
+    font-weight: 500;
+    font-size: 37px;
+    color: white;
 }
 
 .text{
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
+    width: 300px;
+    color: white;
+    font-family: 'Oxygen';
+}
+
+.link1{
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oxygen' ;
+    display: inline-block;
+    margin: 0px 40px;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.link1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: rgb(40,77,27);
+}
+
+.link:hover{
+    color: rgb(40,77,27);
+}
+
+.link1:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .button-info{
@@ -100,11 +159,89 @@ header ul li a{
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    background-color: rgb(211, 167, 129);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(73, 73, 73, 0.247);
 }
 
 .button-info:hover{
-    background-color: rgb(159,85,49);
+    background-color: rgb(29, 66, 16);
     color: white ;
     transition: 0.9s;
+    border-radius: 10px;
+}
+
+.fotoinicio{
+    overflow: hidden;
+    height: 270px;
+    position: relative;
+}
+
+.mural{
+    width: 180px;
+    
+}
+
+.pratos{
+    display: flex;
+    gap: 5px;
+}
+
+.gengibre{
+    margin-top: 5px;
+    background: url(../images/home-page/_MG_0670.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 640px;
+}
+
+.bloquin{
+    display: flex;
+    gap: 50px;
+}
+
+/*.banana{
+    margin-top: 5px;
+    background: url(../images/home-page/_MG_0705.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    height: 370px;
+    width: 400px;
+}*/
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    margin-top: 80px;
+}
+
+.titi{
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-weight: 600;
+    font-size: 36px;
+    color: rgb(29, 66, 16);
+}
+
+.sub{
+    color: rgb(29, 66, 16);
+    margin-left: 60px;
+    font-size: 22px;
+}
+
+.sub1{
+    color: rgb(29, 66, 16);
+    margin-left: 60px;
+    font-size: 18px;
+}
+
+.link2{
+    margin-top: 30px;
+    text-decoration: none;
 }
