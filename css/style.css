@@ -199,29 +199,38 @@ header ul li a{
 
 .bloquin{
     display: flex;
-    gap: 50px;
+    gap: 2px;
 }
 
-/*.banana{
+.feijoada{
     margin-top: 5px;
+    background: url(../images/home-page/_MG_0674.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 668px;
+}
+
+.prato{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.banana{
     background: url(../images/home-page/_MG_0705.jpg);
     background-position: bottom center;
     background-size: cover;
-    height: 370px;
-    width: 400px;
-}*/
+    height: 198px;
+    width: 300px;
+}
 
-.cont{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 170px;
-    margin-top: 80px;
+.textprat{
+    position: absolute;
+    transform: translate(155%, 600%);
 }
 
 .titi{
-    margin-top: 60px;
     text-align: center;
     font-family: "Crimson Text";
     font-weight: 600;
@@ -231,7 +240,6 @@ header ul li a{
 
 .sub{
     color: rgb(29, 66, 16);
-    margin-left: 60px;
     font-size: 22px;
 }
 
@@ -244,4 +252,12 @@ header ul li a{
 .link2{
     margin-top: 30px;
     text-decoration: none;
+}
+
+.product-title{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
