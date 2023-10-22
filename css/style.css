@@ -261,3 +261,67 @@ header ul li a{
     align-items: center;
     justify-content: center;
 }
+
+.cont-gallery{
+    display: flex;
+    gap: 5px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 400px;
+}
+
+.cont-gallery::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.tex-gall{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.t1{
+    font-size: 30px;
+    color: rgb(29, 66, 16);
+}
+
+.t2{
+    font-size: 22px;
+    color: rgb(29, 66, 16);
+}
+
+.t3{
+    font-size: 16px;
+    color: rgb(29, 66, 16);
+}
+
+.wrapper{
+    height: 400px;
+}
+
+.cont-img{
+    width: 300px;
+    height: 400px;
+    object-position: bottom center;
+}
+
+.img-gallery{ 
+    height: 400px;
+    width: 280px;
+}
+
+.left-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.arrow{
+    cursor: pointer;
+}
