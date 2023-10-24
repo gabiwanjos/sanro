@@ -17,6 +17,11 @@ marrom: rgb(159,85,49)
 
 html{
     height: 500vh;
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -267,11 +272,12 @@ header ul li a{
     gap: 5px;
     overflow-y: hidden;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     height: 400px;
 }
 
 .cont-gallery::-webkit-scrollbar{
-    width: 0;
+    display: none;
 }
 
 
