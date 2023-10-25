@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* PALETA DE COR
+branco: rgb(250,252,245)
+verde claro: rgb(121,161,114)
+verde escuro: rgb(40,77,27)
+rgb(29, 66, 16)
+argila: rgb(192,142,97)
+marrom: rgb(159,85,49)
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 500vh;
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 20px 4%;
+
+}
+
+header.rolagem a{
+    color: black;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header ul li a{
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.banner{
+    background-image: url(../images/historia/_A637907.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+
+
+.intro{
+    margin-top: 20px;
+}
+
+.work1{
+    width: 600px;
+}

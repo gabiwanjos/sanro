@@ -271,15 +271,29 @@ header ul li a{
     display: flex;
     gap: 5px;
     overflow-y: hidden;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
     height: 400px;
+    animation: scroll 40s linear infinite;
 }
 
-.cont-gallery::-webkit-scrollbar{
-    display: none;
+/*.cont-gallery::-webkit-scrollbar{
+    width: 5px;
+    height: 4px;
 }
 
+.cont-gallery::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg,transparent,rgb(159,85,49));
+    border-radius: 6px;
+}*/
+
+//*@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+}*//
 
 .tex-gall{
     text-align: center;
@@ -287,22 +301,20 @@ header ul li a{
     flex-direction: column;
     margin-top: 150px;
     width: 700px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .t1{
-    font-size: 30px;
+    font-size: 37px;
     color: rgb(29, 66, 16);
 }
 
 .t2{
-    font-size: 22px;
+    font-size: 29px;
     color: rgb(29, 66, 16);
 }
 
 .t3{
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(29, 66, 16);
 }
 
@@ -310,10 +322,16 @@ header ul li a{
     height: 400px;
 }
 
+.scroll{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
 .cont-img{
     width: 300px;
     height: 400px;
     object-position: bottom center;
+    
 }
 
 .img-gallery{ 
@@ -328,6 +346,67 @@ header ul li a{
     gap: 50px;
 }
 
+.btnarrow{
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(250, 249, 249);
+    border-radius: 4px;
+    height: 30px;
+}
+
+
+.btnarrow:hover{
+    background-color:rgb(159,85,49);
+    transition: 0.5s;
+}
+
+.btnarrow:active{
+    background-color: rgb(159,85,49) ;
+}
+
 .arrow{
     cursor: pointer;
+}
+
+.s3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: white;
+    height: 350px;
+    margin: auto;
+}
+
+.blox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tex3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.t{
+    font-size: 37px;
+    color: rgb(159,85,49);
+}
+
+.t4{
+    font-family: "Crymson Text";
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(196, 154, 117);
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
