@@ -16,7 +16,7 @@ marrom: rgb(159,85,49)
 }
 
 html{
-    height: 500vh;
+    height: 400vh;
     scroll-behavior: smooth;
 }
 
@@ -72,7 +72,7 @@ header ul li a{
 }
 
 .banner{
-    background-image: url(../images/historia/_A637907.jpg);
+    background-image: url(../images/historia/IMG_4812.JPG);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -80,12 +80,98 @@ header ul li a{
     opacity: 0.7;
 }
 
+.s2{
+    margin-top: 30px;
+}
+
+.text1{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    gap: 30px;
+}
+
 
 
 .intro{
     margin-top: 20px;
+    display: flex;
+    gap: 30px;
 }
 
-.work1{
+.worker{
+    background: url(../images/historia/_MG_0718.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+}
+
+.sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 600px;
+}
+
+.global{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.worker1{
+    width: 500px;
+}
+
+.foto1{
+    background: url(../images/historia/_MG_0753.jpg);
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+.s3{
+    margin-top: 70px;
+}
+
+.inter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: url(../images/historia/_A637907.jpg);
+    height: 500px;
+    width: 700px;
+    background-position: center;
+    background-size: cover;   
 }

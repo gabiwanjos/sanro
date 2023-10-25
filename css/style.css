@@ -271,29 +271,20 @@ header ul li a{
     display: flex;
     gap: 5px;
     overflow-y: hidden;
-    overflow-x: hidden;
     height: 400px;
     animation: scroll 40s linear infinite;
 }
 
-/*.cont-gallery::-webkit-scrollbar{
-    width: 5px;
+.cont-gallery::-webkit-scrollbar{
+    width: 3px;
     height: 4px;
+    background-color: rgb(121,161,114);
 }
 
 .cont-gallery::-webkit-scrollbar-thumb{
-    background: linear-gradient(45deg,transparent,rgb(159,85,49));
+    background: linear-gradient(45deg,transparent,rgb(29, 66, 16));
     border-radius: 6px;
-}*/
-
-//*@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px*9));
-    }
-}*//
+}
 
 .tex-gall{
     text-align: center;
