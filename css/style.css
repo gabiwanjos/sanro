@@ -270,6 +270,7 @@ header ul li a{
 .cont-gallery{
     display: flex;
     gap: 5px;
+    overflow-x: scroll;
     overflow-y: hidden;
     height: 400px;
     animation: scroll 40s linear infinite;
@@ -277,7 +278,7 @@ header ul li a{
 
 .cont-gallery::-webkit-scrollbar{
     width: 3px;
-    height: 4px;
+    height: 8px;
     background-color: rgb(121,161,114);
 }
 
