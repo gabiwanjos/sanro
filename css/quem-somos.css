@@ -72,7 +72,7 @@ header ul li a{
 }
 
 .banner{
-    background-image: url(../images/historia/IMG_4812.JPG);
+    background-image: url(../images/historia/_A637907.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -103,7 +103,7 @@ header ul li a{
 }
 
 .worker{
-    background: url(../images/historia/_MG_0718.jpg);
+    
     background-position: center;
     background-size: cover;
     height: 400px;
@@ -169,9 +169,23 @@ header ul li a{
     justify-content: center;
     align-items: center;
     margin: auto;
-    background: url(../images/historia/_A637907.jpg);
-    height: 500px;
-    width: 700px;
+    background: url(../images/historia/_MG_0718.jpg);
+    height: 400px;
+    width: 500px;
     background-position: center;
     background-size: cover;   
+}
+
+.titles{
+    text-align: center;
+    font-family: "Crimson Text";
+    font-weight: 600;
+    font-size: 36px;
+    color: rgb(29, 66, 16);
+}
+
+.paragrafos{
+    font-family: "Oxygen";
+    margin-top: 20px;
+    font-size: 18px;
 }
